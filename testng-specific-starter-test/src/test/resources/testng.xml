@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DANA_Merchant-Portal-Test" verbose="1" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="io.github.gungjodi.testngspecificstarter.listeners.InvokedMethodListener"/>
+        <listener class-name="io.github.gungjodi.testngspecificstarter.listeners.SuiteListener"/>
+        <listener class-name="io.github.gungjodi.testngspecificstarter.listeners.TestListener"/>
+    </listeners>
+    <method-selectors>
+        <method-selector>
+            <selector-class name="io.github.gungjodi.testngspecificstarter.SuiteMethodSelector" priority="12"/>
+        </method-selector>
+    </method-selectors>
+    <test name="Merchant-Portal-App">
+        <method-selectors>
+            <method-selector>
+                <selector-class name="io.github.gungjodi.testngspecificstarter.TestMethodSelector" priority="13"/>
+            </method-selector>
+        </method-selectors>
+        <packages>
+            <package name="io.github.gungjodi.testngspecific.*"/>
+        </packages>
+    </test>
+</suite>

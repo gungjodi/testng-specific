@@ -1,0 +1,8 @@
+## list tests package/class/method/TestCaseId to be excluded from test execution, separated by new line
+
+# package=io.github.gungjodi.testngspecificstarter -> exclude all tests in this package
+# class=io.github.gungjodi.testngspecificstarter.ExampleTest -> exclude all tests in this class
+# groups=groups1,groups2 -> exclude all tests on this groups, support multiple groups separated by comma
+# testMethodExclude -> exclude only this method
+# TEST_CASE_ID_002 -> exclude only method that has @AllureId annotation with this value
+#

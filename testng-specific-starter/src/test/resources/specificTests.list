@@ -1,0 +1,6 @@
+#list specific tests package/class/method/TestCaseId to be executed, separated by new line
+package=io.github.gungjodi.testngspecificstarter
+class=io.github.gungjodi.testngspecificstarter.ExampleTest
+groups=groups1,groups2
+testSum
+TEST_CASE_ID_001
