@@ -20,10 +20,10 @@ public class TestMethodSelector implements IMethodSelector {
     /**
      * filters package/class/method/caseId to be run from a set of tests (includes/excludes)
      * ex.
-     * package -> id.gungj.sdet.test -> will run all tests inside this package
-     * class -> id.gungj.sdet.test.ExampleTest -> will run all test methods this class
-     * methodName -> testSum -> will run tests with this method name
-     * caseId -> TEST_CASE_ID_001 -> will run tests that has TestCaseId annotation with this value
+     * package -&gt; id.gungj.sdet.test -&gt; will run all tests inside this package
+     * class -&gt; id.gungj.sdet.test.ExampleTest -&gt; will run all test methods this class
+     * methodName -&gt; testSum -&gt; will run tests with this method name
+     * caseId -&gt; TEST_CASE_ID_001 -&gt; will run tests that has TestCaseId annotation with this value
      */
     @Override
     public boolean includeMethod(IMethodSelectorContext context, ITestNGMethod method, boolean isTestMethod) {
