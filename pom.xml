@@ -24,6 +24,7 @@
         <allure.version>2.23.0</allure.version>
         <logback.version>1.3.11</logback.version>
         <slf4j.version>2.0.12</slf4j.version>
+        <maven.central.deploy.skip>true</maven.central.deploy.skip>
     </properties>
 
     <dependencyManagement>
@@ -128,22 +129,21 @@
                 </executions>
             </plugin>
 
-<!--            <plugin>-->
-<!--                <groupId>org.sonatype.central</groupId>-->
-<!--                <artifactId>central-publishing-maven-plugin</artifactId>-->
-<!--                <version>0.3.0</version>-->
-<!--                <extensions>true</extensions>-->
-<!--                <configuration>-->
-<!--                    <deploymentName>TestNG-Specific-Starter</deploymentName>-->
-<!--                    <publishingServerId>central</publishingServerId>-->
-<!--                    <autoPublish>true</autoPublish>-->
-<!--                    <waitUntil>published</waitUntil>-->
-<!--                    <tokenAuth>true</tokenAuth>-->
-<!--                    <excludeArtifacts>-->
-<!--                        <excludeArtifact>testng-specific-starter-test</excludeArtifact>-->
-<!--                    </excludeArtifacts>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.3.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <skipPublishing>${maven.central.deploy.skip}</skipPublishing>
+                    <deploymentName>TestNG-Specific-Starter</deploymentName>
+                    <publishingServerId>central</publishingServerId>
+                    <tokenAuth>true</tokenAuth>
+                    <excludeArtifacts>
+                        <excludeArtifact>testng-specific-starter-test</excludeArtifact>
+                    </excludeArtifacts>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
