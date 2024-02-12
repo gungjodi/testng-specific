@@ -1,4 +1,0 @@
-2024-02-12 04:14:00 INFO  i.g.g.t.l.TestListener:37 [TEST_CASE_ALLURE_001] - ==== Test Case Started ======
-2024-02-12 04:14:00 INFO  i.g.g.t.l.TestListener:38 [TEST_CASE_ALLURE_001] - class : io.github.gungjodi.testngspecific.package1.TestClass1Package1
-2024-02-12 04:14:00 INFO  i.g.g.t.l.TestListener:39 [TEST_CASE_ALLURE_001] - name : allureIdTest
-2024-02-12 04:14:00 INFO  i.g.g.t.l.TestListener:56 [TEST_CASE_ALLURE_001] - testcase TEST_CASE_ALLURE_001 status : Passed!

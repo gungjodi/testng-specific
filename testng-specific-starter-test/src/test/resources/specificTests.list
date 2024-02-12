@@ -1,2 +1,8 @@
-#list specific tests package/class/method/TestCaseId to be executed, separated by new line
-TEST_CASE_ALLURE_001
+## list tests package/class/method/TestCaseId to be executed, separated by new line
+
+# package=io.github.gungjodi.testngspecificstarter -> execute all tests in this package
+# class=io.github.gungjodi.testngspecificstarter.ExampleTest -> execute all tests in this class
+# groups=groups1,groups2 -> execute all tests on this groups, support multiple groups separated by comma
+# testMethodExclude -> execute only this method
+# TEST_CASE_ID_002 -> execute only method that has @AllureId annotation with this value
+#
