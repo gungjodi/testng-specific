@@ -128,22 +128,22 @@
                 </executions>
             </plugin>
 
-            <plugin>
-                <groupId>org.sonatype.central</groupId>
-                <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.3.0</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <deploymentName>TestNG-Specific-Starter</deploymentName>
-                    <publishingServerId>central</publishingServerId>
-                    <autoPublish>true</autoPublish>
-                    <waitUntil>published</waitUntil>
-                    <tokenAuth>true</tokenAuth>
-                    <excludeArtifacts>
-                        <excludeArtifact>testng-specific-starter-test</excludeArtifact>
-                    </excludeArtifacts>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.sonatype.central</groupId>-->
+<!--                <artifactId>central-publishing-maven-plugin</artifactId>-->
+<!--                <version>0.3.0</version>-->
+<!--                <extensions>true</extensions>-->
+<!--                <configuration>-->
+<!--                    <deploymentName>TestNG-Specific-Starter</deploymentName>-->
+<!--                    <publishingServerId>central</publishingServerId>-->
+<!--                    <autoPublish>true</autoPublish>-->
+<!--                    <waitUntil>published</waitUntil>-->
+<!--                    <tokenAuth>true</tokenAuth>-->
+<!--                    <excludeArtifacts>-->
+<!--                        <excludeArtifact>testng-specific-starter-test</excludeArtifact>-->
+<!--                    </excludeArtifacts>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 
