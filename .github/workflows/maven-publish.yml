@@ -31,7 +31,7 @@ jobs:
       run: mvn -B package
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml --projects testng-specific-starter -am clean install
+      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml --projects testng-specific-starter -am install
       env:
         GITHUB_TOKEN: ${{ github.token }}
         MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
