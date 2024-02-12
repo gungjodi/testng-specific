@@ -6,7 +6,7 @@
 
     <groupId>io.github.gungjodi</groupId>
     <artifactId>testng-specific</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
     <description>TestNG Specific Parent</description>
     <url>https://github.com/gungjodi/testng-specific-starter</url>
