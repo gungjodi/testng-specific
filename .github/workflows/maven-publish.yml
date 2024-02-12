@@ -27,11 +27,14 @@ jobs:
         gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
         gpg-passphrase: MAVEN_GPG_PASSPHRASE
 
+    - name: Clean projects
+      run: mvn clean
+
     - name: Build with Maven
-      run: mvn -B package
+      run: mvn -B package --pl !testng-specific-starter-test
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml --projects testng-specific-starter -am install
+      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml --pl !testng-specific-starter-test
       env:
         GITHUB_TOKEN: ${{ github.token }}
         MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
